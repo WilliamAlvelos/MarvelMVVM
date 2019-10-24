@@ -74,8 +74,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdj-J3-ztK" userLabel="LoadingView">
                     <rect key="frame" x="0.0" y="0.0" width="371" height="363"/>
                     <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="EG8-V6-Di1">
-                            <rect key="frame" x="175.5" y="171.5" width="20" height="20"/>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="EG8-V6-Di1">
+                            <rect key="frame" x="167" y="163" width="37" height="37"/>
                         </activityIndicatorView>
                     </subviews>
                     <constraints>
