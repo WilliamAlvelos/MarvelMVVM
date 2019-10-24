@@ -16,10 +16,15 @@ class HeroComicsViewModel {
 
     var reload: (() -> Void)?
     var didReceiveError: ((Error) -> Void)?
-    var comics: [ComicModel] = []
+    private (set) var comics: [ComicModel] = []
     
-    var hero: HeroModel
-    var title: String
+    let title: String
+    
+    //*************************************************
+    // MARK: - Private Properties
+    //*************************************************
+    
+    private let hero: HeroModel
     
     //*************************************************
     // MARK: - Inits
@@ -29,7 +34,13 @@ class HeroComicsViewModel {
         self.hero = hero
         self.title = title
     }
-    
+}
+
+//*************************************************
+// MARK: - Public Methods
+//*************************************************
+
+extension HeroComicsViewModel {
     func request() {
         ComicService().fetchComic(with: hero) { (result) in
             switch result {
