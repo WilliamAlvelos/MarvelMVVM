@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		0049EB7DC74BEFCDC5740A4FFBE89170 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842048DB17F30FF114AF0395D1EE9C /* Data+Extension.swift */; };
 		00C6A45F25B7C9567ABD4B6CEBB8F3A0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672EAE5099109AAA86E10466D9C1D61D /* Utils.swift */; };
+		0290502E3B121A69D839755EF7E84CC2 /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0C0F9FF0F248319F1602C6760DFEE /* OHHTTPStubs-dummy.m */; };
 		0526AEB2FAAA1D80AC6245AB71BE994F /* BlockEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD84FC946EE2597C985946C5BE8FBCD /* BlockEncryptor.swift */; };
 		05958032576427EDBC47854025783311 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DBFB750A7937041EB17EC557163D0C /* Utils+Foundation.swift */; };
+		09FC76A8A82823220A432100766D3B8A /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 096695640EB7C33CF6A50F5B55957985 /* OHHTTPStubs.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4B2F3BD40827D1388C57F37F28164 /* ParameterEncoding.swift */; };
 		0C78BF11377F17C8F5B8CD7604269361 /* OHHTTPStubsMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D26235173A1C0619AC6E796262C7749 /* OHHTTPStubsMethodSwizzling.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		0E6F0E8337D8928B164D18FC54D6C7F9 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0800A9B6A8C729D8932965C22AE673 /* Bit.swift */; };
@@ -25,16 +27,13 @@
 		1E6C33DE401D9AEFE660851A3E3394E6 /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137928FC16F75AE744DF77EAC6B5CC9 /* NoPadding.swift */; };
 		2324B6D4ECEFC84827C55F254B488107 /* Pods-MarvelMVVM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C86C11EDF219458468C152E581C6D8 /* Pods-MarvelMVVM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		276071E9DBAAA08BBBD569288E026156 /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DA434935B0E5029288218CF87BFBBB9C /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		279182A0ADEBF168DDA358DA2DEC5F74 /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EED2D1C890B651C8BF657187EF07B75 /* OHPathHelpers.m */; };
 		294C60E5E562CF3C2917335BDD910F42 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F589AD4558E58FD5B913D1273A1D0 /* Checksum.swift */; };
 		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393030B6C100C0C3668E4AEA800E5CF /* SwiftyJSON-dummy.m */; };
 		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125BB5C1683CC7C86C60E13FCD31D949 /* SessionDelegate.swift */; };
 		2DD9959CD5493A978BCB3B3CC0D2EB49 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C2E867E228E6275E9B70927EF7F811 /* ECB.swift */; };
 		2E938A3C33EE9130C959EFA811DFB2EE /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31BE52868CBCBA51CD88E69380BA7D4 /* Rabbit+Foundation.swift */; };
 		2FDD3DAC4E9D0C03A16D3F838A8E15F5 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB7997AD0426A258DA294304A488AB /* SHA2.swift */; };
-		30D34E2F749B66B677A48B38D00C8225 /* OHHTTPStubsMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD084328ABD5E3EF724029A10BA02B /* OHHTTPStubsMethodSwizzling.m */; };
 		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C839D91A8E0D0A9B0BEB3BBE5043C2 /* NetworkReachabilityManager.swift */; };
-		35ADFD7C4A24B1FE7E150BB4FE477E12 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C46724C551990AD6C0B2D240F12E6 /* OHHTTPStubs+NSURLSessionConfiguration.m */; };
 		3607067F46CCABE732B2E0078149F8B2 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B048A2C0D960EAA098C2358E9F821AF /* Array+Foundation.swift */; };
 		3A311C085163B84F93641C2089B2F454 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		3E3FE29D83B6DB4B229CB38CCB4E1C86 /* CBCMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5FC9CF6C0B03B194BB22C61F57105 /* CBCMAC.swift */; };
@@ -45,7 +44,7 @@
 		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		49696DF6233801BF2D0F0BE214E56304 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418390D071CEFE0654356FD385AE8968 /* SecureBytes.swift */; };
 		49C8C4DFD859391ED9CB7EBC50DDBBD1 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B190A7564CB26BB7AD36A5298F805B3 /* MD5.swift */; };
-		52F39956B5C121F4F73C82DB4E96F0FE /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 096695640EB7C33CF6A50F5B55957985 /* OHHTTPStubs.m */; };
+		50DD550C5887C8D6B530FD39E705DABE /* OHHTTPStubsMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD084328ABD5E3EF724029A10BA02B /* OHHTTPStubsMethodSwizzling.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5300EB86348ED2DD35A9339104F21842 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8C0B568BC41790D5CC644C3E2718F /* CBC.swift */; };
 		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C509162FD23F342C4EA200D22E28F9 /* Validation.swift */; };
 		54BDD3BC1B92330FEF7F64FA1660BB13 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553CC24FE2B94F8B4171747901C4381 /* AES.swift */; };
@@ -72,10 +71,10 @@
 		7CA57460C1D6652FD0CF4B62C596849B /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11822FAE38BA7AC806B5A77F6796F5E /* PCBC.swift */; };
 		7E3E6309C4EB4C70BC8AF5EB9CA3B6FB /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90B5C15C4D80027E52274B9EA54C38 /* Poly1305.swift */; };
 		7E6F4EFB85936E0B3EB9AD287F074C36 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA21763EB854DE1955CDD519494876C /* PKCS7.swift */; };
-		7F7C4C9A4BE3A22087F992806F1C90E0 /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0C0F9FF0F248319F1602C6760DFEE /* OHHTTPStubs-dummy.m */; };
 		7FDA31B79296C1F4B0431A748173AE54 /* Pods-MarvelMVVMUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF5CA6E86CBBFA8B85063F275109EC /* Pods-MarvelMVVMUITests-dummy.m */; };
 		8039DF4C1AE7378FB41921D22A44AEF7 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9FE3C914AFBA16D330C37E748CB35D /* UInt16+Extension.swift */; };
 		81D983B9013D8525DC5858313298D992 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		8284CEF9381957DC159BD4DEA34F7DD6 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C46724C551990AD6C0B2D240F12E6 /* OHHTTPStubs+NSURLSessionConfiguration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095046D3BBED4BBC670142641C26FF8 /* AFError.swift */; };
 		854AF7B141389D5512E8E73DF38FEBEA /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366CB6FDB4B95977984DF350F445C4EB /* BlockMode.swift */; };
 		8573D5547D4AC8CEE69AB545148A72B6 /* CCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87AE9FDE5D7D2EA01D5FA892A5144BA /* CCM.swift */; };
@@ -92,18 +91,18 @@
 		9A80311C79CED9486D2E9FA4DEC3D45A /* StreamDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA78169639D921CDBCFA81F7C120862 /* StreamDecryptor.swift */; };
 		9BB78DC33523C76095B1D95D5CEF44CA /* OHHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E45884E9FAC72FA690BC512A77CF92 /* OHHTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D22006C799C6F6E9452B97B760F7CD1 /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A52C32D3B71450A9D0D0E892EDA2E46 /* UInt64+Extension.swift */; };
-		A36E722E97F456C32398D76A577CC8FB /* NSURLRequest+HTTPBodyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BBD5112CF26959A757D948717C80DA /* NSURLRequest+HTTPBodyTesting.m */; };
 		A65BC55FFE138090EF77D9EC1F72A88B /* HKDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00834A3F506103DE189852BC2680A225 /* HKDF.swift */; };
+		A8C9C300EBF9AEDA92EE694FA9C43E8F /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD327A33AC024C93490090698F14AB /* OHHTTPStubsResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A93275D5C1DAD3CA7CCC2A9586AC9ADE /* AEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8011F4AEBDDBF83AC88BD3C15AAF60 /* AEAD.swift */; };
 		AAA648FE58CC4A49EF39BFDBCBA7C1FA /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374677F85AAB686B2F92F24962964D06 /* PBKDF1.swift */; };
 		ABF5E5F45D270B8B7CE386D4BB8E614D /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D72C06985CCF337872F0A2BCEC056E /* Int+Extension.swift */; };
 		ADE26A6317E68C1CB7FC86D68B4EB8BF /* RandomBytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D405CD9B0BED8AE60BC535BA39A86A /* RandomBytesSequence.swift */; };
 		AE242F808DE761641CF108E8844745D6 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDFB1D019524C221B49FCF88B19E1E3 /* Cipher.swift */; };
+		AF2C825DF21DC64E4675027D03D3CE5E /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D3FE978674C732EE09E655F614277 /* OHHTTPStubsSwift.swift */; };
 		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49426D9709A3D5B07AD63127CBA486 /* TaskDelegate.swift */; };
 		B15E0CD8A2E6D29E9849F092CD078773 /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C3E544878D7DE2DB05723E93575CF4 /* GCM.swift */; };
 		B4E0F6805D68577613B95A18651FC167 /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E81D2F9537FF8D238B0E41DF4191F7 /* Blowfish.swift */; };
-		B7E45C4365BE7112D6D4D84544D840B8 /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DD327A33AC024C93490090698F14AB /* OHHTTPStubsResponse.m */; };
-		BCC838993C29682C5BAEBAEEE8374714 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D3FE978674C732EE09E655F614277 /* OHHTTPStubsSwift.swift */; };
+		B57C04E7BB134F9BFBFFE51D4576EC03 /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 832A2FF236BDAC0A1E58304B5566E043 /* OHHTTPStubsResponse+JSON.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619981DD93429C5426BB4992444E81A7 /* Alamofire.swift */; };
 		C138FACCB027B81AE55814AA990543D5 /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1490DCB83539C60A9A296CF3C574AC9 /* OFB.swift */; };
 		C17E552920AF110E9DB7AB635C65A12D /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094893CF2F3DDF4782CF7EDF2EA40118 /* Scrypt.swift */; };
@@ -115,9 +114,11 @@
 		CC03E31F122F91A26DD22BEEF813D779 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D2733F755D9A5261F6A4C73F51929 /* UInt128.swift */; };
 		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49678D6BEAFBC636E4F714AAB2DE918A /* DispatchQueue+Alamofire.swift */; };
 		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6B94969E5FBB8AEAD522A55BD67FF /* Response.swift */; };
+		D7D844286E382F941104E2639305B7FF /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EED2D1C890B651C8BF657187EF07B75 /* OHPathHelpers.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D820172C124F8B10D0C72B31F1819FDC /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B8319DE3981AF38D5A643DA3BC26C /* String+FoundationExtension.swift */; };
 		D8C90AFD1D666460C3FE007172ED052E /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96609C78221E5694EE76B8ED96BA6C2B /* CompactMap.swift */; };
 		DBCA1194814B520897C3D81C016F51DB /* BlockDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D54956D875379BCC6841F67C83C531 /* BlockDecryptor.swift */; };
+		DC99684A8C97D2066A0D0BF90410178D /* NSURLRequest+HTTPBodyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BBD5112CF26959A757D948717C80DA /* NSURLRequest+HTTPBodyTesting.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DD7CAA2463A742FC740431ED674892FD /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795B8651F0F262B34C6F39017238485 /* ChaCha20.swift */; };
 		E0067342787B93C845546321EF1DC7D8 /* AES.Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C5FFBD8F0B995A70BB2536BF99C7C /* AES.Cryptors.swift */; };
 		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22F1C67853A4260A08BFC522D651FCD /* ResponseSerialization.swift */; };
@@ -135,7 +136,6 @@
 		F4F5BD47D6A5EC3C507DAEBDC36E5303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D53675062A30E6F7B41966C4210E949 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F83CA1780F5D9C6432CE9D7248D9B35A /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4AC250FF963CED4EB0D74B362BEC2B /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBD83FEF1CE5B319531FB6E5FFB4F22C /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 832A2FF236BDAC0A1E58304B5566E043 /* OHHTTPStubsResponse+JSON.m */; };
 		FC380F439D913681D738F1BE7B739646 /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2509672E2F8B942321F1EC5184C747 /* ZeroPadding.swift */; };
 /* End PBXBuildFile section */
 
@@ -881,7 +881,7 @@
 			buildConfigurationList = 922F19B1A739BBFD2F4284423D72D365 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
 			buildPhases = (
 				245B2044FC0E21765220C8307E99A1BB /* Headers */,
-				AE1498E53F6DDAB37C2BF20AE40A82D9 /* Sources */,
+				9355729778A47CE2CFB1F610638AD06C /* Sources */,
 				5CE63E52033B9EB192CC73B2CB7700E8 /* Frameworks */,
 				0FC690F64DA2FCEC04C4AD1BEC983511 /* Resources */,
 			);
@@ -985,6 +985,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 34DFC9C6E44DFDAFDD7608672CC41036 /* Products */;
@@ -1196,19 +1197,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE1498E53F6DDAB37C2BF20AE40A82D9 /* Sources */ = {
+		9355729778A47CE2CFB1F610638AD06C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A36E722E97F456C32398D76A577CC8FB /* NSURLRequest+HTTPBodyTesting.m in Sources */,
-				35ADFD7C4A24B1FE7E150BB4FE477E12 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */,
-				7F7C4C9A4BE3A22087F992806F1C90E0 /* OHHTTPStubs-dummy.m in Sources */,
-				52F39956B5C121F4F73C82DB4E96F0FE /* OHHTTPStubs.m in Sources */,
-				30D34E2F749B66B677A48B38D00C8225 /* OHHTTPStubsMethodSwizzling.m in Sources */,
-				FBD83FEF1CE5B319531FB6E5FFB4F22C /* OHHTTPStubsResponse+JSON.m in Sources */,
-				B7E45C4365BE7112D6D4D84544D840B8 /* OHHTTPStubsResponse.m in Sources */,
-				BCC838993C29682C5BAEBAEEE8374714 /* OHHTTPStubsSwift.swift in Sources */,
-				279182A0ADEBF168DDA358DA2DEC5F74 /* OHPathHelpers.m in Sources */,
+				DC99684A8C97D2066A0D0BF90410178D /* NSURLRequest+HTTPBodyTesting.m in Sources */,
+				8284CEF9381957DC159BD4DEA34F7DD6 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */,
+				0290502E3B121A69D839755EF7E84CC2 /* OHHTTPStubs-dummy.m in Sources */,
+				09FC76A8A82823220A432100766D3B8A /* OHHTTPStubs.m in Sources */,
+				50DD550C5887C8D6B530FD39E705DABE /* OHHTTPStubsMethodSwizzling.m in Sources */,
+				B57C04E7BB134F9BFBFFE51D4576EC03 /* OHHTTPStubsResponse+JSON.m in Sources */,
+				A8C9C300EBF9AEDA92EE694FA9C43E8F /* OHHTTPStubsResponse.m in Sources */,
+				AF2C825DF21DC64E4675027D03D3CE5E /* OHHTTPStubsSwift.swift in Sources */,
+				D7D844286E382F941104E2639305B7FF /* OHPathHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

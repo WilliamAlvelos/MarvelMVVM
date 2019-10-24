@@ -23,7 +23,7 @@ DEPENDENCIES:
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - CryptoSwift
     - OHHTTPStubs
@@ -35,6 +35,6 @@ SPEC CHECKSUMS:
   OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 0ae41cc8271304c3af1a2e8a7e3f13f6d16ba6df
+PODFILE CHECKSUM: 8cb90d8b3c353f0c438b3cd02dd6f5a30ae72761
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
