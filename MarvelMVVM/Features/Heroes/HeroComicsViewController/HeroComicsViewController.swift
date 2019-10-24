@@ -100,7 +100,8 @@ extension HeroComicsViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeroComicsCollectionViewCell.identifier, for: indexPath) as! HeroComicsCollectionViewCell
         let comicModel = viewModel.comics[indexPath.row]
-        cell.setup(with: comicModel)
+        let cellViewModel = HeroComicsCollectionViewModel(comics: comicModel)
+        cell.setup(withViewModel: cellViewModel)
         return cell
     }
     

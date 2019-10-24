@@ -10,7 +10,27 @@ import Foundation
 
 class HeroComicsCollectionViewModel {
     
-    var comics: ComicModel
+    //*************************************************
+    // MARK: - Private Properties
+    //*************************************************
+    
+    private let comics: ComicModel
+    
+    //*************************************************
+    // MARK: - Public Properties
+    //*************************************************
+    
+    var thumbnail: String {
+        return comics.thumbnail.fullPath
+    }
+    
+    var title: String {
+        return comics.title ?? "Título Desconhecido"
+    }
+    
+    //*************************************************
+    // MARK: - Inits
+    //*************************************************
     
     init(comics: ComicModel) {
         self.comics = comics
