@@ -224,14 +224,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		651AF4B6236257B800B13DC9 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				651AF4AA2362516600B13DC9 /* HeroComicsViewController */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		89378D36C4FA939827826576 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,7 +237,6 @@
 		C51850732347EE970054F8D9 /* HeroDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
-				651AF4B6236257B800B13DC9 /* Components */,
 				C51850742347EEB90054F8D9 /* HeroDetailViewController.swift */,
 				C51850782347EECA0054F8D9 /* HeroDetailViewModel.swift */,
 				C51850752347EEB90054F8D9 /* HeroDetailViewController.xib */,
@@ -276,6 +267,7 @@
 			children = (
 				651AF4A92362515600B13DC9 /* HeroesViewController */,
 				C51850732347EE970054F8D9 /* HeroDetailViewController */,
+				651AF4AA2362516600B13DC9 /* HeroComicsViewController */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
