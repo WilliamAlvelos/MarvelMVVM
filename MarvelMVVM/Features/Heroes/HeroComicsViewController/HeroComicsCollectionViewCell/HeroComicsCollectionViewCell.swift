@@ -23,13 +23,24 @@ class HeroComicsCollectionViewCell: UICollectionViewCell {
 
     var viewModel: HeroComicsCollectionViewModel!
     
-    func setup(with comic: ComicModel) {
-        comicsImageView.downloadImage(withURL: comic.thumbnail.fullPath)
-        comicsTitleLabel.text = comic.title
-    }
+    //*************************************************
+    // MARK: - Lifecycle
+    //*************************************************
     
     override func prepareForReuse() {
         super.prepareForReuse()
         comicsImageView.image = nil
+    }
+}
+
+//*************************************************
+// MARK: - Public Methods
+//*************************************************
+
+extension HeroComicsCollectionViewCell {
+    func setup(withViewModel viewModel: HeroComicsCollectionViewModel!) {
+        self.viewModel = viewModel
+        comicsImageView.downloadImage(withURL: viewModel.thumbnail)
+        comicsTitleLabel.text = viewModel.title
     }
 }

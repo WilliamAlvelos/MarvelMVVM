@@ -1,15 +1,15 @@
 //
-//  HeroComicsView.swift
+//  HeroComicsViewController.swift
 //  MarvelMVVM
 //
-//  Created by William Alvelos on 10/9/19.
+//  Created by AndreLO on 24/10/19.
 //  Copyright © 2019 William Alvelos. All rights reserved.
 //
 
 import UIKit
 
-class HeroComicsView: CustomView {
-    
+class HeroComicsViewController: UIViewController {
+
     //*************************************************
     // MARK: - IBOutlet
     //*************************************************
@@ -25,33 +25,52 @@ class HeroComicsView: CustomView {
     // MARK: - Public Properties
     //*************************************************
 
-    var viewModel: HeroComicsViewModel?
+    let viewModel: HeroComicsViewModel
     
     //*************************************************
-    // MARK: - Public Methods
+    // MARK: - Inits
     //*************************************************
-
-    func setup(viewModel: HeroComicsViewModel) {
+    
+    init(viewModel: HeroComicsViewModel) {
         self.viewModel = viewModel
-        
-        self.setupObservable()
-        self.setupCollectionView()
-        self.setupLayout()
-        self.activityIndicator.startAnimating()
-        self.viewModel?.request()
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     //*************************************************
-    // MARK: - Private Methods
+    // MARK: - Lifecycle
     //*************************************************
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupObservable()
+        setupCollectionView()
+        setupLayout()
+        requestComics()
+    }
+}
+
+//*************************************************
+// MARK: - Private Methods
+//*************************************************
+
+extension HeroComicsViewController {
+    private func requestComics() {
+        activityIndicator.startAnimating()
+        viewModel.request()
+    }
+    
     private func setupObservable() {
-        viewModel?.didReceiveError = { error in
+        viewModel.didReceiveError = { error in
             self.errorView.isHidden = false
             self.errorMessageLabel.text = error.localizedDescription
         }
         
-        viewModel?.reload = {
+        viewModel.reload = {
             self.activityIndicator.stopAnimating()
             self.loadingView.isHidden = true
             self.heroComicsCollectionView.reloadData()
@@ -61,13 +80,11 @@ class HeroComicsView: CustomView {
     private func setupCollectionView() {
         self.heroComicsCollectionView.delegate = self
         self.heroComicsCollectionView.dataSource = self
-        self.heroComicsCollectionView.register(UINib(nibName: "HeroComicsCollectionViewCell", bundle: nil),
-                                               forCellWithReuseIdentifier: "HeroComicsCollectionViewCell")
-
+        self.heroComicsCollectionView.register(HeroComicsCollectionViewCell.nib, forCellWithReuseIdentifier: HeroComicsCollectionViewCell.identifier)
     }
     
     private func setupLayout() {
-        self.headerLabel.text = viewModel?.title
+        self.headerLabel.text = viewModel.title
     }
 }
 
@@ -75,20 +92,21 @@ class HeroComicsView: CustomView {
 // MARK: - UICollectionViewDelegate & UICollectionViewDataSource
 //*************************************************
 
-extension HeroComicsView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HeroComicsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("selected item \(indexPath.row)")
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeroComicsCollectionViewCell", for: indexPath) as! HeroComicsCollectionViewCell
-        guard let comicModel = viewModel?.comics[indexPath.row] else { return UICollectionViewCell() }
-        cell.setup(with: comicModel)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeroComicsCollectionViewCell.identifier, for: indexPath) as! HeroComicsCollectionViewCell
+        let comicModel = viewModel.comics[indexPath.row]
+        let cellViewModel = HeroComicsCollectionViewModel(comics: comicModel)
+        cell.setup(withViewModel: cellViewModel)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel?.comics.count ?? 0
+        return viewModel.comics.count
     }
 }
 
@@ -96,9 +114,9 @@ extension HeroComicsView: UICollectionViewDelegate, UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 //*************************************************
 
-extension HeroComicsView: UICollectionViewDelegateFlowLayout {
+extension HeroComicsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (self.frame.width - 16)/2.3 - 4, height: collectionView.frame.height)
+        return CGSize(width: (self.view.frame.width - 16)/2.3 - 4, height: collectionView.frame.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -109,4 +127,3 @@ extension HeroComicsView: UICollectionViewDelegateFlowLayout {
         return 0
     }
 }
-
